@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum de Fotos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .album {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .album img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .album img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Álbum de Fotos</h1>
+  </header>
+
+  <section class="album">
+    <img src="fotos/foto1.jpg" alt="Foto 1">
+    <img src="fotos/foto2.jpg" alt="Foto 2">
+    <img src="fotos/foto3.jpg" alt="Foto 3">
+    <img src="fotos/foto4.jpg" alt="Foto 4">
+    <img src="fotos/foto5.jpeg" alt="Foto 5">
+    <img src="fotos/foto6.jpg" alt="Foto 6">
+  </section>
+
+  <footer>
+    <p>Hecho con ❤️</p>
+  </footer>
+</body>
+</html>
