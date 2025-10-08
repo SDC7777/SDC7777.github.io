@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Para Mi Amor ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffcccc, #ffe6e6);
+      color: #333;
+      text-align: center;
+    }
+
+    .container {
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #e60073;
+    }
+
+    p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 50px;
+      animation: pulse 1s infinite;
+      color: red;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .button {
+      margin-top: 30px;
+      background-color: #ff66b2;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #e60073;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>Para ti, mi amor</h1>
+
+    <p>
+      Hoy quise hacer algo especial para recordarte cuánto te amo.  
+      Eres la razón por la que sonrío, por la que creo en el amor y en los días hermosos.  
+      Gracias por estar a mi lado, por tu ternura, por tu risa, por tu todo.  
+    </p>
+    <p>
+      Esta página es solo un pequeño detalle, pero mi amor por ti es inmenso y eterno.
+    </p>
+    <button class="button" onclick="mostrarMensaje()">Haz clic si me amas ❤️</button>
+
+    <p id="mensaje" style="margin-top: 30px; font-weight: bold; display: none; font-size: 1.5em;"></p>
+
+    <div class="footer">
+      Hecho con mucho amor por ti 💖
+
+       <audio id="miCancion">
+  <source src="Locos - Leon larregui (Letra).mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      const mensaje = document.getElementById("mensaje");
+      mensaje.innerText = "¡Yo también te amo con todo mi corazón! 💕";
+      mensaje.style.display = "block";
+      document.getElementById('miCancion').play();
+
+      
+         
+
+    }
+  </script>
+</body>
+</html>
